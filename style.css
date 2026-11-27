@@ -60,10 +60,53 @@ a{
     font-weight: 500;
     letter-spacing: 2.5px;
     color: #23191b;
+    padding: 26px 14px;
     transition: color 0.25s ease;
 }
 
 .nav-link a:hover{
+    color: #b56c7c;
+}
+.nav-item{
+    position: relative;
+    height: 76px;
+    display: flex;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    position: fixed;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #efe1e5;
+    border-bottom: 1px solid #efe1e5;
+    padding: 10px 36px;
+    justify-content: center;
+    gap: 36px;
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, top 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item:hover .nav-menu{
+   
+    opacity: 1;
+    visibility: visible;
+    top: 76px;
+}
+.nav-menu a{
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 1.5px;
+color: #23191b;
+padding: 8px 12px;
+transition: color 0.25 ease;
+}
+
+.nav-menu a:hover{
     color: #b56c7c;
 }
 
